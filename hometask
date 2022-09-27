@@ -1,0 +1,18 @@
+my_dict = {'a': 5, 'b': 6, 'c': 5, 'd': 3}
+v_list = [3, 5]
+
+
+def clean_dict_values(d, v_list):
+    clean_dict = {}
+    opp_dict = {}
+    for key, value in my_dict.items():
+        if value in v_list:
+            opp_dict[key] = value
+        else:
+            clean_dict[key] = value
+
+    print(clean_dict)
+    return clean_dict
+
+
+clean_dict_values(my_dict, v_list)
